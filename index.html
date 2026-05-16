@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutrición y Vida Saludable</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Nunito:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <i class="fas fa-seedling"></i>
+        <span>NutriVida</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#consejos">Consejos</a></li>
+        <li><a href="#recetas">Recetas</a></li>
+        <li><a href="#ejercicio">Ejercicio</a></li>
+        <li><a href="#calculadora">Mi Objetivo</a></li>
+      </ul>
+      <a href="#calculadora" class="nav-cta">Comenzar ahora</a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-shapes">
+      <div class="bg-circle c1"></div>
+      <div class="bg-circle c2"></div>
+      <div class="bg-circle c3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text" data-aos="fade-right">
+        <span class="hero-badge"><i class="fas fa-leaf"></i> Bienestar Natural</span>
+        <h1 class="hero-title">
+          Nutrición y<br />
+          <span class="hero-highlight">Vida Saludable</span>
+        </h1>
+        <p class="hero-sub">
+          Transforma tus hábitos, mejora tu alimentación y fortalece tu
+          bienestar día a día.
+        </p>
+        <div class="hero-btns">
+          <a href="#planes" class="btn btn-primary">
+            <i class="fas fa-utensils"></i> Ver planes alimenticios
+          </a>
+          <a href="#recetas" class="btn btn-outline">
+            <i class="fas fa-book-open"></i> Explorar recetas
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="h-stat">
+            <span class="h-num">500+</span>
+            <span class="h-label">Recetas</span>
+          </div>
+          <div class="h-divider"></div>
+          <div class="h-stat">
+            <span class="h-num">4</span>
+            <span class="h-label">Planes</span>
+          </div>
+          <div class="h-divider"></div>
+          <div class="h-stat">
+            <span class="h-num">100%</span>
+            <span class="h-label">Natural</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-aos="fade-left">
+        <div class="hero-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=640&q=85"
+            alt="Alimentación saludable y colorida"
+            class="hero-img"
+          />
+          <div class="float-card fc1">
+            <span class="fc-icon"><i class="fas fa-bowl-food"></i></span>
+            <div>
+              <strong>Vitaminas</strong>
+              <small>Esenciales</small>
+            </div>
+          </div>
+          <div class="float-card fc2">
+            <span class="fc-icon"><i class="fas fa-heart"></i></span>
+            <div>
+              <strong>Bienestar</strong>
+              <small>Total</small>
+            </div>
+          </div>
+          <div class="float-card fc3">
+            <span class="fc-icon"><i class="fas fa-bolt"></i></span>
+            <div>
+              <strong>Energía</strong>
+              <small>Diaria</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#planes" class="scroll-cue" aria-label="Ir a planes">
+      <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+    </a>
+  </section>
+
+  <!-- ===================== PLANES ===================== -->
+  <section class="section planes" id="planes">
+    <div class="container">
+      <div class="sec-header" data-aos="fade-up">
+        <span class="sec-tag">Planes Alimenticios</span>
+        <h2 class="sec-title">Encuentra tu plan <span class="accent">ideal</span></h2>
+        <p class="sec-sub">Diseñados para adaptarse a tu estilo de vida y objetivos personales.</p>
+      </div>
+      <div class="planes-grid">
+
+        <!-- Plan Balanceado -->
+        <div class="plan-card" data-aos="fade-up">
+          <div class="plan-icon-wrap">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <span class="plan-badge">Popular</span>
+          <h3>Plan Balanceado</h3>
+          <p>Un plan completo que incluye todos los grupos alimenticios en proporciones ideales para tu salud general.</p>
+          <ul class="plan-list">
+            <li><i class="fas fa-leaf"></i> Nutrición completa</li>
+            <li><i class="fas fa-calendar-check"></i> Fácil de seguir</li>
+            <li><i class="fas fa-carrot"></i> Variedad de alimentos</li>
+            <li><i class="fas fa-stomach"></i> Digestión óptima</li>
+          </ul>
+          <div class="plan-icons-row">
+            <span title="Frutas"><i class="fas fa-apple-alt"></i></span>
+            <span title="Vegetales"><i class="fas fa-seedling"></i></span>
+            <span title="Proteínas"><i class="fas fa-egg"></i></span>
+            <span title="Hidratación"><i class="fas fa-tint"></i></span>
+          </div>
+          <button class="btn-plan" data-plan="balanceado">Ver detalle <i class="fas fa-eye"></i></button>
+        </div>
+
+        <!-- Plan Energía -->
+        <div class="plan-card featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="plan-icon-wrap">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <span class="plan-badge">Recomendado</span>
+          <h3>Plan para Energía Diaria</h3>
+          <p>Optimiza tu rendimiento físico y mental con alimentos que potencian tu energía natural durante todo el día.</p>
+          <ul class="plan-list">
+            <li><i class="fas fa-fire-alt"></i> Más vitalidad</li>
+            <li><i class="fas fa-brain"></i> Concentración mejorada</li>
+            <li><i class="fas fa-bread-slice"></i> Carbohidratos saludables</li>
+            <li><i class="fas fa-fish"></i> Proteínas de calidad</li>
+          </ul>
+          <div class="plan-icons-row">
+            <span title="Avena"><i class="fas fa-wheat-awn"></i></span>
+            <span title="Frutos secos"><i class="fas fa-lemon"></i></span>
+            <span title="Ejercicio"><i class="fas fa-running"></i></span>
+            <span title="Descanso"><i class="fas fa-moon"></i></span>
+          </div>
+          <button class="btn-plan" data-plan="energia">Ver detalle <i class="fas fa-eye"></i></button>
+        </div>
+
+        <!-- Plan Peso -->
+        <div class="plan-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="plan-icon-wrap">
+            <i class="fas fa-weight-scale"></i>
+          </div>
+          <span class="plan-badge">Efectivo</span>
+          <h3>Control de Peso</h3>
+          <p>Alcanza y mantén tu peso ideal con un plan nutritivo, sin pasar hambre ni someterte a restricciones extremas.</p>
+          <ul class="plan-list">
+            <li><i class="fas fa-chart-line"></i> Déficit calórico sano</li>
+            <li><i class="fas fa-ban"></i> Sin restricciones extremas</li>
+            <li><i class="fas fa-battery-full"></i> Saciedad duradera</li>
+            <li><i class="fas fa-fire"></i> Metabolismo activo</li>
+          </ul>
+          <div class="plan-icons-row">
+            <span title="Agua"><i class="fas fa-tint"></i></span>
+            <span title="Ejercicio"><i class="fas fa-dumbbell"></i></span>
+            <span title="Ensaladas"><i class="fas fa-leaf"></i></span>
+            <span title="Control"><i class="fas fa-chart-pie"></i></span>
+          </div>
+          <button class="btn-plan" data-plan="peso">Ver detalle <i class="fas fa-eye"></i></button>
+        </div>
+
+        <!-- Plan Familiar -->
+        <div class="plan-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="plan-icon-wrap">
+            <i class="fas fa-people-roof"></i>
+          </div>
+          <span class="plan-badge">Familiar</span>
+          <h3>Plan Familiar Saludable</h3>
+          <p>Diseñado para toda la familia: recetas prácticas, nutritivas y deliciosas para pequeños y grandes.</p>
+          <ul class="plan-list">
+            <li><i class="fas fa-child"></i> Apto para niños</li>
+            <li><i class="fas fa-utensils"></i> Recetas sencillas</li>
+            <li><i class="fas fa-piggy-bank"></i> Económico</li>
+            <li><i class="fas fa-rainbow"></i> Variado y divertido</li>
+          </ul>
+          <div class="plan-icons-row">
+            <span title="Familia"><i class="fas fa-heart"></i></span>
+            <span title="Frutas"><i class="fas fa-apple-alt"></i></span>
+            <span title="Cocina"><i class="fas fa-blender"></i></span>
+            <span title="Diversión"><i class="fas fa-star"></i></span>
+          </div>
+          <button class="btn-plan" data-plan="familiar">Ver detalle <i class="fas fa-eye"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONSEJOS ===================== -->
+  <section class="section consejos" id="consejos">
+    <div class="container">
+      <div class="sec-header" data-aos="fade-up">
+        <span class="sec-tag">Consejos Nutricionales</span>
+        <h2 class="sec-title">Hábitos que <span class="accent">transforman</span></h2>
+        <p class="sec-sub">Pequeñas acciones diarias que generan grandes cambios en tu bienestar.</p>
+      </div>
+      <div class="consejos-grid">
+
+        <!-- 1 -->
+        <div class="consejo-card" data-aos="fade-up">
+          <div class="con-img-wrap">
+            <img src="https://images.unsplash.com/photo-1550353175-a3611868086b?w=500&q=80" alt="Hidratación Diaria" />
+            <div class="con-ico-badge"><i class="fas fa-tint"></i></div>
+          </div>
+          <div class="con-body">
+            <h4>Hidratación Diaria</h4>
+            <p>Toma al menos 8 vasos de agua al día. Mejora el metabolismo, la piel y la concentración mental.</p>
+            <button class="btn-consejo" data-consejo="hidratacion">Ver detalle <i class="fas fa-eye"></i></button>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="consejo-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="con-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80" alt="Frutas y Verduras" />
+            <div class="con-ico-badge"><i class="fas fa-apple-alt"></i></div>
+          </div>
+          <div class="con-body">
+            <h4>Frutas y Verduras</h4>
+            <p>Llena la mitad de tu plato con frutas y verduras coloridas, ricas en vitaminas y antioxidantes.</p>
+            <button class="btn-consejo" data-consejo="frutas">Ver detalle <i class="fas fa-eye"></i></button>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="consejo-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="con-img-wrap">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500&q=80" alt="Horarios de Comida" />
+            <div class="con-ico-badge"><i class="fas fa-clock"></i></div>
+          </div>
+          <div class="con-body">
+            <h4>Horarios de Comida</h4>
+            <p>Mantén horarios regulares. El ritmo circadiano influye en tu digestión y metabolismo.</p>
+            <button class="btn-consejo" data-consejo="horarios">Ver detalle <i class="fas fa-eye"></i></button>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="consejo-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="con-img-wrap">
+            <img src="https://images.unsplash.com/photo-1500673922987-e212871fec22?w=500&q=80" alt="Descanso Reparador" />
+            <div class="con-ico-badge"><i class="fas fa-moon"></i></div>
+          </div>
+          <div class="con-body">
+            <h4>Descanso Reparador</h4>
+            <p>Duerme entre 7 y 9 horas. El sueño regula las hormonas del hambre y el metabolismo.</p>
+            <button class="btn-consejo" data-consejo="descanso">Ver detalle <i class="fas fa-eye"></i></button>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="consejo-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="con-img-wrap">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=500&q=80" alt="Reduce el Azúcar" />
+            <div class="con-ico-badge"><i class="fas fa-ban"></i></div>
+          </div>
+          <div class="con-body">
+            <h4>Reduce el Azúcar</h4>
+            <p>Opta por frutas naturales para satisfacer el antojo dulce y evita el azúcar refinada.</p>
+            <button class="btn-consejo" data-consejo="azucar">Ver detalle <i class="fas fa-eye"></i></button>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="consejo-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="con-img-wrap">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&q=80" alt="Controla Porciones" />
+            <div class="con-ico-badge"><i class="fas fa-utensils"></i></div>
+          </div>
+          <div class="con-body">
+            <h4>Controla Porciones</h4>
+            <p>Reconoce el tamaño adecuado de cada porción. Comer conscientemente evita el exceso calórico.</p>
+            <button class="btn-consejo" data-consejo="porciones">Ver detalle <i class="fas fa-eye"></i></button>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="consejo-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="con-img-wrap">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&q=80" alt="Evita Ultraprocesados" />
+            <div class="con-ico-badge"><i class="fas fa-leaf"></i></div>
+          </div>
+          <div class="con-body">
+            <h4>Evita Ultraprocesados</h4>
+            <p>Reduce comida ultraprocesada. Contiene aditivos, exceso de sal y grasas trans perjudiciales.</p>
+            <button class="btn-consejo" data-consejo="ultraprocesados">Ver detalle <i class="fas fa-eye"></i></button>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="consejo-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="con-img-wrap">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80" alt="Muévete Cada Día" />
+            <div class="con-ico-badge"><i class="fas fa-running"></i></div>
+          </div>
+          <div class="con-body">
+            <h4>Muévete Cada Día</h4>
+            <p>30 minutos de actividad diaria mejoran tu energía, estado de ánimo y salud cardiovascular.</p>
+            <button class="btn-consejo" data-consejo="ejercicio">Ver detalle <i class="fas fa-eye"></i></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RECETAS ===================== -->
+  <section class="section recetas" id="recetas">
+    <div class="container">
+      <div class="sec-header" data-aos="fade-up">
+        <span class="sec-tag">Recetas Saludables</span>
+        <h2 class="sec-title">Sabor y <span class="accent">nutrición</span> juntos</h2>
+        <p class="sec-sub">Recetas deliciosas, nutritivas y fáciles de preparar para cada momento del día.</p>
+      </div>
+      <div class="recetas-grid">
+
+        <div class="receta-card" data-aos="fade-up">
+          <div class="receta-img-wrap">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80" alt="Ensalada Fresca" />
+            <div class="receta-overlay">
+              <button class="btn-recipe" data-receta="ensalada">Ver receta <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <span class="receta-nivel facil">Fácil</span>
+          </div>
+          <div class="receta-info">
+            <h4>Ensalada Fresca</h4>
+            <div class="receta-meta">
+              <span><i class="fas fa-clock"></i> 15 min</span>
+              <span><i class="fas fa-fire"></i> 180 kcal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="receta-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="receta-img-wrap">
+            <img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500&q=80" alt="Bowl de Avena" />
+            <div class="receta-overlay">
+              <button class="btn-recipe" data-receta="avena">Ver receta <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <span class="receta-nivel facil">Fácil</span>
+          </div>
+          <div class="receta-info">
+            <h4>Bowl de Avena con Frutas</h4>
+            <div class="receta-meta">
+              <span><i class="fas fa-clock"></i> 10 min</span>
+              <span><i class="fas fa-fire"></i> 320 kcal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="receta-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="receta-img-wrap">
+            <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=500&q=80" alt="Smoothie Natural" />
+            <div class="receta-overlay">
+              <button class="btn-recipe" data-receta="smoothie">Ver receta <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <span class="receta-nivel facil">Fácil</span>
+          </div>
+          <div class="receta-info">
+            <h4>Smoothie Natural</h4>
+            <div class="receta-meta">
+              <span><i class="fas fa-clock"></i> 5 min</span>
+              <span><i class="fas fa-fire"></i> 210 kcal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="receta-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="receta-img-wrap">
+            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=500&q=80" alt="Wrap Saludable" />
+            <div class="receta-overlay">
+              <button class="btn-recipe" data-receta="wrap">Ver receta <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <span class="receta-nivel medio">Medio</span>
+          </div>
+          <div class="receta-info">
+            <h4>Wrap Saludable</h4>
+            <div class="receta-meta">
+              <span><i class="fas fa-clock"></i> 20 min</span>
+              <span><i class="fas fa-fire"></i> 380 kcal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="receta-card" data-aos="fade-up" data-aos-delay="320">
+          <div class="receta-img-wrap">
+            <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=500&q=80" alt="Pollo con Vegetales" />
+            <div class="receta-overlay">
+              <button class="btn-recipe" data-receta="pollo">Ver receta <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <span class="receta-nivel medio">Medio</span>
+          </div>
+          <div class="receta-info">
+            <h4>Pollo con Vegetales</h4>
+            <div class="receta-meta">
+              <span><i class="fas fa-clock"></i> 35 min</span>
+              <span><i class="fas fa-fire"></i> 420 kcal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="receta-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="receta-img-wrap">
+            <img src="https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?w=500&q=80" alt="Tostadas con Aguacate" />
+            <div class="receta-overlay">
+              <button class="btn-recipe" data-receta="tostadas">Ver receta <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <span class="receta-nivel facil">Fácil</span>
+          </div>
+          <div class="receta-info">
+            <h4>Tostadas con Aguacate</h4>
+            <div class="receta-meta">
+              <span><i class="fas fa-clock"></i> 10 min</span>
+              <span><i class="fas fa-fire"></i> 290 kcal</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EJERCICIO ===================== -->
+  <section class="section ejercicio" id="ejercicio">
+    <div class="container">
+      <div class="sec-header" data-aos="fade-up">
+        <span class="sec-tag">Importancia del Ejercicio</span>
+        <h2 class="sec-title">Muévete hacia una <span class="accent">mejor vida</span></h2>
+        <p class="sec-sub">La actividad física y la nutrición son los pilares fundamentales de tu bienestar integral.</p>
+      </div>
+
+      <div class="ej-main">
+        <div class="ej-info" data-aos="fade-right">
+          <h3>Alimentación + Ejercicio = Bienestar Total</h3>
+          <p>La combinación perfecta entre una buena alimentación y actividad física regular es la clave para una vida plena y llena de energía. No se trata de esfuerzos extremos, sino de pequeños cambios consistentes que generan grandes resultados.</p>
+          <div class="ej-tips">
+            <div class="ej-tip">
+              <div class="ej-tip-icon"><i class="fas fa-running"></i></div>
+              <span>30 minutos de actividad diaria es suficiente para comenzar</span>
+            </div>
+            <div class="ej-tip">
+              <div class="ej-tip-icon"><i class="fas fa-apple-alt"></i></div>
+              <span>Come bien antes y después de cada sesión de ejercicio</span>
+            </div>
+            <div class="ej-tip">
+              <div class="ej-tip-icon"><i class="fas fa-tint"></i></div>
+              <span>Hidrátate antes, durante y después del ejercicio</span>
+            </div>
+            <div class="ej-tip">
+              <div class="ej-tip-icon"><i class="fas fa-moon"></i></div>
+              <span>El descanso forma parte fundamental de tu entrenamiento</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ej-bars" data-aos="fade-left">
+          <h3>Beneficios comprobados del ejercicio</h3>
+          <div class="bars-list">
+
+            <div class="bar-item">
+              <div class="bar-head">
+                <span><i class="fas fa-bolt"></i> Mejora la energía</span>
+                <span class="bar-pct">92%</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" data-w="92"></div></div>
+            </div>
+
+            <div class="bar-item">
+              <div class="bar-head">
+                <span><i class="fas fa-brain"></i> Reduce el estrés</span>
+                <span class="bar-pct">87%</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" data-w="87"></div></div>
+            </div>
+
+            <div class="bar-item">
+              <div class="bar-head">
+                <span><i class="fas fa-dumbbell"></i> Fortalece el cuerpo</span>
+                <span class="bar-pct">95%</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" data-w="95"></div></div>
+            </div>
+
+            <div class="bar-item">
+              <div class="bar-head">
+                <span><i class="fas fa-weight"></i> Control del peso</span>
+                <span class="bar-pct">80%</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" data-w="80"></div></div>
+            </div>
+
+            <div class="bar-item">
+              <div class="bar-head">
+                <span><i class="fas fa-heart"></i> Salud cardiovascular</span>
+                <span class="bar-pct">88%</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" data-w="88"></div></div>
+            </div>
+
+            <div class="bar-item">
+              <div class="bar-head">
+                <span><i class="fas fa-moon"></i> Favorece el descanso</span>
+                <span class="bar-pct">75%</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" data-w="75"></div></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="beneficios-grid">
+        <div class="bene-card" data-aos="fade-up">
+          <div class="bene-ico"><i class="fas fa-bolt"></i></div>
+          <h4>Más Energía</h4>
+          <p>El ejercicio regular aumenta tus niveles de energía durante todo el día y mejora tu rendimiento.</p>
+        </div>
+        <div class="bene-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="bene-ico"><i class="fas fa-brain"></i></div>
+          <h4>Menos Estrés</h4>
+          <p>La actividad física libera endorfinas que reducen el estrés y mejoran el estado de ánimo.</p>
+        </div>
+        <div class="bene-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="bene-ico"><i class="fas fa-dumbbell"></i></div>
+          <h4>Cuerpo Fuerte</h4>
+          <p>Fortalece músculos, huesos y articulaciones con ejercicio regular y progresivo.</p>
+        </div>
+        <div class="bene-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="bene-ico"><i class="fas fa-heart"></i></div>
+          <h4>Corazón Sano</h4>
+          <p>Mejora la salud cardiovascular y reduce el riesgo de enfermedades crónicas.</p>
+        </div>
+        <div class="bene-card" data-aos="fade-up" data-aos-delay="320">
+          <div class="bene-ico"><i class="fas fa-scale-balanced"></i></div>
+          <h4>Peso Ideal</h4>
+          <p>Combinar ejercicio con buena alimentación es la fórmula perfecta para tu peso ideal.</p>
+        </div>
+        <div class="bene-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="bene-ico"><i class="fas fa-moon"></i></div>
+          <h4>Mejor Sueño</h4>
+          <p>La actividad física mejora la calidad del sueño y favorece el descanso reparador.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CALCULADORA ===================== -->
+  <section class="section calculadora" id="calculadora">
+    <div class="container">
+      <div class="sec-header" data-aos="fade-up">
+        <span class="sec-tag">Mi Objetivo</span>
+        <h2 class="sec-title">¿Cuál es tu <span class="accent">objetivo?</span></h2>
+        <p class="sec-sub">Selecciona tu meta y recibe una recomendación personalizada de nutrición y ejercicio.</p>
+      </div>
+
+      <div class="calc-content" data-aos="fade-up">
+        <div class="obj-grid">
+
+          <button class="obj-btn" data-obj="peso">
+            <div class="obj-img-wrap">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&q=80" alt="Bajar de peso" />
+              <div class="obj-ico-badge"><i class="fas fa-scale-balanced"></i></div>
+            </div>
+            <span>Bajar de peso</span>
+          </button>
+
+          <button class="obj-btn" data-obj="mantener">
+            <div class="obj-img-wrap">
+              <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=300&q=80" alt="Mantener peso" />
+              <div class="obj-ico-badge"><i class="fas fa-bullseye"></i></div>
+            </div>
+            <span>Mantener peso</span>
+          </button>
+
+          <button class="obj-btn" data-obj="energia">
+            <div class="obj-img-wrap">
+              <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=300&q=80" alt="Ganar energía" />
+              <div class="obj-ico-badge"><i class="fas fa-bolt"></i></div>
+            </div>
+            <span>Ganar energía</span>
+          </button>
+
+          <button class="obj-btn" data-obj="habitos">
+            <div class="obj-img-wrap">
+              <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=300&q=80" alt="Mejorar hábitos" />
+              <div class="obj-ico-badge"><i class="fas fa-seedling"></i></div>
+            </div>
+            <span>Mejorar hábitos</span>
+          </button>
+
+          <button class="obj-btn" data-obj="actividad">
+            <div class="obj-img-wrap">
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=300&q=80" alt="Aumentar actividad física" />
+              <div class="obj-ico-badge"><i class="fas fa-person-running"></i></div>
+            </div>
+            <span>Aumentar actividad</span>
+          </button>
+
+        </div>
+
+        <div class="rec-box" id="recBox">
+          <div class="rec-placeholder">
+            <div class="ph-icon"><i class="fas fa-leaf"></i></div>
+            <p>Selecciona un objetivo para ver tu recomendación personalizada</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="footer-body">
+      <div class="container">
+        <div class="footer-grid">
+
+          <div class="f-brand">
+            <div class="f-logo">
+              <i class="fas fa-seedling"></i>
+              <span>NutriVida</span>
+            </div>
+            <p class="f-tagline">"Pequeños hábitos crean grandes cambios"</p>
+            <div class="f-socials">
+              <a href="#" class="f-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="f-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="f-social" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="f-social" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="f-links">
+            <h4>Secciones</h4>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#planes">Planes Alimenticios</a></li>
+              <li><a href="#consejos">Consejos Nutricionales</a></li>
+              <li><a href="#recetas">Recetas Saludables</a></li>
+              <li><a href="#ejercicio">Ejercicio</a></li>
+              <li><a href="#calculadora">Mi Objetivo</a></li>
+            </ul>
+          </div>
+
+          <div class="f-links">
+            <h4>Recursos</h4>
+            <ul>
+              <li><a href="#">Blog de nutrición</a></li>
+              <li><a href="#">Guía de alimentos</a></li>
+              <li><a href="#">Tabla calórica</a></li>
+              <li><a href="#">Rutinas de ejercicio</a></li>
+              <li><a href="#">Calculadora de IMC</a></li>
+            </ul>
+          </div>
+
+          <div class="f-newsletter">
+            <h4>Mantente informado</h4>
+            <p>Recibe consejos y recetas directamente en tu correo.</p>
+            <div class="nw-form">
+              <input type="email" placeholder="tu@correo.com" class="nw-input" id="nwInput" />
+              <button class="nw-btn" id="nwBtn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Nutrición y Vida Saludable. Todos los derechos reservados.</p>
+        <div class="f-bottom-links">
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+          <a href="#">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== MODAL RECETAS ===================== -->
+  <div class="plan-modal-overlay" id="recetaModalOverlay" role="dialog" aria-modal="true" aria-labelledby="recetaModalTitle">
+    <div class="plan-modal" id="recetaModal">
+      <button class="modal-close" id="recetaModalClose" aria-label="Cerrar">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-inner" id="recetaModalInner"></div>
+    </div>
+  </div>
+
+  <!-- ===================== MODAL CONSEJOS ===================== -->
+  <div class="plan-modal-overlay" id="consejoModalOverlay" role="dialog" aria-modal="true" aria-labelledby="consejoModalTitle">
+    <div class="plan-modal" id="consejoModal">
+      <button class="modal-close" id="consejoModalClose" aria-label="Cerrar">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-inner" id="consejoModalInner"></div>
+    </div>
+  </div>
+
+  <!-- ===================== MODAL PLAN ===================== -->
+  <div class="plan-modal-overlay" id="planModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="plan-modal" id="planModal">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-inner" id="modalInner"></div>
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <button class="btt" id="btt" aria-label="Volver arriba">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
