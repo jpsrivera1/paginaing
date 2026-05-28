@@ -891,3 +891,22 @@ window.addEventListener('load', () => {
   revealBars();
   updateActiveLink();
 });
+
+/* -------------------------------------------------------
+   11. FAQ ACCORDION
+------------------------------------------------------- */
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+    // Cierra todos primero
+    document.querySelectorAll('.faq-question').forEach(b => {
+      b.setAttribute('aria-expanded', 'false');
+      b.nextElementSibling.classList.remove('open');
+    });
+    // Abre el pulsado si estaba cerrado
+    if (!isOpen) {
+      btn.setAttribute('aria-expanded', 'true');
+      btn.nextElementSibling.classList.add('open');
+    }
+  });
+});

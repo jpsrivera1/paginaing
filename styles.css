@@ -1233,6 +1233,226 @@ ul  { list-style:none; }
 }
 
 /* ============================================================
+   RIESGOS
+   ============================================================ */
+.riesgos {
+  background: var(--cacao);
+  position: relative;
+  overflow: hidden;
+}
+.riesgos::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(188,127,100,.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+.riesgos .sec-header .sec-tag { background: rgba(252,243,232,.12); color: var(--avena); }
+.riesgos .sec-title { color: var(--crema); }
+.riesgos .sec-sub { color: rgba(252,243,232,.62); }
+.riesgos .accent { color: var(--salmon); }
+
+.riesgos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.riesgo-card {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: var(--r);
+  padding: 28px 24px 24px;
+  display: flex; flex-direction: column; gap: 10px;
+  transition: var(--tr);
+  position: relative;
+  overflow: hidden;
+}
+.riesgo-card::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-accent, var(--salmon)), transparent);
+  opacity: 0;
+  transition: var(--tr);
+}
+.riesgo-card:hover { background: rgba(255,255,255,.09); transform: translateY(-6px); }
+.riesgo-card:hover::after { opacity: 1; }
+
+.riesgo-card--wide { grid-column: span 1; }
+
+.riesgo-ico {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; flex-shrink: 0;
+}
+.riesgo-ico--rojo   { background: rgba(220,53,69,.2);  color: #ff6b7a; }
+.riesgo-ico--naranja{ background: rgba(255,153,0,.2);  color: #ffb347; }
+.riesgo-ico--morado { background: rgba(130,80,180,.2); color: #b08aff; }
+.riesgo-ico--azul   { background: rgba(59,130,246,.2); color: #7ab8ff; }
+.riesgo-ico--hierba { background: rgba(175,172,139,.2);color: var(--hierba); }
+.riesgo-ico--salmon { background: rgba(188,127,100,.2);color: var(--salmon); }
+.riesgo-ico--cacao  { background: rgba(252,243,232,.1);color: var(--crema); }
+
+.riesgo-card h4 {
+  font-family: var(--ff-head);
+  font-size: 1rem; color: var(--crema);
+}
+.riesgo-card p {
+  font-size: .84rem; color: rgba(252,243,232,.6);
+  line-height: 1.55; flex: 1;
+}
+.riesgo-tag {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 50px;
+  font-size: .7rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+  background: rgba(255,255,255,.07); color: rgba(252,243,232,.55);
+  border: 1px solid rgba(255,255,255,.1);
+  align-self: flex-start;
+}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq { background: var(--crema); }
+
+.faq-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 70px;
+  align-items: start;
+}
+.faq-left { position: sticky; top: 100px; }
+.faq-intro {
+  color: rgba(58,34,34,.65);
+  font-size: .95rem; line-height: 1.65;
+  margin: 16px 0 32px;
+}
+.faq-deco {
+  font-size: 5rem;
+  color: var(--oliva);
+  opacity: .15;
+  line-height: 1;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(95,102,59,.15);
+}
+.faq-question {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 0;
+  font-family: var(--ff-head);
+  font-size: .97rem; font-weight: 700;
+  color: var(--cacao);
+  text-align: left; gap: 16px;
+  transition: var(--tr);
+}
+.faq-question:hover { color: var(--oliva); }
+.faq-question[aria-expanded="true"] { color: var(--oliva); }
+
+.faq-icon {
+  font-size: .8rem; flex-shrink: 0;
+  width: 28px; height: 28px;
+  border: 2px solid var(--oliva);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--oliva);
+  transition: transform .35s ease;
+}
+.faq-question[aria-expanded="true"] .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s ease, padding .4s ease;
+}
+.faq-answer.open {
+  max-height: 200px;
+  padding-bottom: 18px;
+}
+.faq-answer p {
+  font-size: .88rem; color: rgba(58,34,34,.7); line-height: 1.65;
+}
+
+/* ============================================================
+   RECURSOS
+   ============================================================ */
+.recursos { background: linear-gradient(160deg, #f5f0e8 0%, var(--crema) 100%); }
+
+.recursos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.recurso-card:nth-child(4) { grid-column: 1; }
+.recurso-card:nth-child(5) { grid-column: 2; }
+
+.recurso-card {
+  background: #fff;
+  border-radius: var(--r);
+  padding: 26px 24px 22px;
+  text-decoration: none; color: inherit;
+  display: flex; flex-direction: column; gap: 10px;
+  box-shadow: var(--sh-sm);
+  border: 1px solid rgba(95,102,59,.08);
+  transition: var(--tr);
+  position: relative; overflow: hidden;
+}
+.recurso-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--oliva), var(--salmon));
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .4s ease;
+}
+.recurso-card:hover { transform: translateY(-7px); box-shadow: var(--sh-lg); }
+.recurso-card:hover::before { transform: scaleX(1); }
+
+.recurso-header {
+  display: flex; align-items: center; justify-content: space-between;
+}
+.recurso-ico {
+  width: 48px; height: 48px;
+  background: linear-gradient(135deg, var(--oliva), #7a8150);
+  border-radius: 13px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(95,102,59,.3);
+}
+.recurso-ico--oms { background: linear-gradient(135deg, #005ea5, #0080cc); box-shadow: 0 4px 12px rgba(0,94,165,.3); }
+.recurso-ico--ops { background: linear-gradient(135deg, #00539b, #007ac2); box-shadow: 0 4px 12px rgba(0,83,155,.3); }
+
+.recurso-pais {
+  font-size: .72rem; font-weight: 700; color: var(--oliva);
+  background: rgba(95,102,59,.08); border-radius: 50px;
+  padding: 4px 10px; letter-spacing: .03em;
+  display: flex; align-items: center; gap: 4px;
+}
+.recurso-card h4 {
+  font-family: var(--ff-head);
+  font-size: .97rem; color: var(--cacao);
+  line-height: 1.35;
+}
+.recurso-card p {
+  font-size: .82rem; color: rgba(58,34,34,.62);
+  line-height: 1.55; flex: 1;
+}
+.recurso-link {
+  font-size: .78rem; font-weight: 700; color: var(--oliva);
+  display: flex; align-items: center; gap: 6px;
+  margin-top: 4px;
+  transition: var(--tr);
+}
+.recurso-link i { transition: transform .3s ease; }
+.recurso-card:hover .recurso-link { color: var(--salmon); }
+.recurso-card:hover .recurso-link i { transform: translateX(4px); }
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width:1024px){
@@ -1243,6 +1463,13 @@ ul  { list-style:none; }
   .vid-card:nth-child(4),
   .vid-card:nth-child(5) { grid-column: auto; }
   .vid-card:nth-child(5) { grid-column: 2 / 3; justify-self: center; max-width: 100%; }
+  .riesgos-grid { grid-template-columns: repeat(2, 1fr); }
+  .riesgo-card--wide { grid-column: span 2; }
+  .faq-container { grid-template-columns: 1fr 1.3fr; gap: 48px; }
+  .recursos-grid { grid-template-columns: repeat(2, 1fr); }
+  .recurso-card:nth-child(4),
+  .recurso-card:nth-child(5) { grid-column: auto; }
+  .recurso-card:nth-child(5) { grid-column: 2 / 3; justify-self: center; max-width: 100%; }
 }
 
 @media (max-width:900px){
@@ -1256,6 +1483,8 @@ ul  { list-style:none; }
   .fc2 { left:0; bottom:30px; }
   .fc3 { right:0; }
   .ej-main { grid-template-columns:1fr; }
+  .faq-container { grid-template-columns: 1fr; gap: 40px; }
+  .faq-left { position: static; }
 }
 
 @media (max-width:768px){
@@ -1279,6 +1508,11 @@ ul  { list-style:none; }
   .recetas-grid { grid-template-columns:1fr; }
   .beneficios-grid { grid-template-columns:repeat(2,1fr); }
   .consejos-grid { grid-template-columns: repeat(2, 1fr); }
+  .riesgos-grid { grid-template-columns: 1fr; }
+  .riesgo-card--wide { grid-column: span 1; }
+  .recursos-grid { grid-template-columns: 1fr; }
+  .recurso-card:nth-child(4),
+  .recurso-card:nth-child(5) { grid-column: auto; }
 }
 
 @media (max-width:520px){
