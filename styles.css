@@ -1029,6 +1029,84 @@ ul  { list-style:none; }
 }
 
 /* ============================================================
+   VIDEOS
+   ============================================================ */
+.videos { background: var(--crema); }
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Centrar la última fila cuando son 5 cards (3+2) */
+.vid-card:nth-child(4) { grid-column: 1; }
+.vid-card:nth-child(5) { grid-column: 2; }
+
+.vid-card {
+  background: #fff;
+  border-radius: var(--r);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: var(--tr);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--sh-sm);
+}
+.vid-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--sh-lg);
+}
+
+.vid-thumb {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+.vid-thumb img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+.vid-card:hover .vid-thumb img { transform: scale(1.06); }
+
+.vid-play {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(30, 10, 10, .38);
+  transition: var(--tr);
+}
+.vid-play i {
+  width: 52px; height: 52px;
+  background: #ff0000;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 1.1rem;
+  padding-left: 4px;           /* centra visualmente el triángulo */
+  box-shadow: 0 6px 20px rgba(255,0,0,.5);
+  transition: var(--tr);
+}
+.vid-card:hover .vid-play { background: rgba(30, 10, 10, .55); }
+.vid-card:hover .vid-play i { transform: scale(1.14); }
+
+.vid-info {
+  padding: 16px 18px 20px;
+  flex: 1;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.vid-info h4 {
+  font-family: var(--ff-head);
+  font-size: .98rem; color: var(--cacao);
+  line-height: 1.4;
+}
+.vid-channel {
+  font-size: .78rem; font-weight: 700;
+  color: #ff0000;
+  display: flex; align-items: center; gap: 5px;
+}
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .footer { background:var(--cacao); color:rgba(252,243,232,.75); }
@@ -1161,6 +1239,10 @@ ul  { list-style:none; }
   .footer-grid { grid-template-columns:1fr 1fr; }
   .ej-main { gap:40px; }
   .consejos-grid { grid-template-columns: repeat(2, 1fr); }
+  .videos-grid { grid-template-columns: repeat(2, 1fr); }
+  .vid-card:nth-child(4),
+  .vid-card:nth-child(5) { grid-column: auto; }
+  .vid-card:nth-child(5) { grid-column: 2 / 3; justify-self: center; max-width: 100%; }
 }
 
 @media (max-width:900px){
@@ -1212,4 +1294,6 @@ ul  { list-style:none; }
   .plan-modal { padding:32px 22px 28px; border-radius:20px; }
   .modal-benefits { grid-template-columns:1fr; }
   .modal-hero h2 { font-size:1.25rem; }
+  .videos-grid { grid-template-columns:1fr; }
+  .vid-card:nth-child(5) { grid-column: auto; }
 }
